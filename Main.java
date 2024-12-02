@@ -7,7 +7,7 @@ public class Main {
         JFrame frame = new JFrame("StudyNAV");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(700, 700);
-        MainAppSwing tb = new MainAppSwing();
+        Timetable  tb = new Timetable ();
         JTabbedPane tabbedPane = new JTabbedPane();
         tabbedPane.addTab("Dashboard", new Dashboard());
 
