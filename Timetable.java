@@ -8,7 +8,7 @@ import java.util.List;
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 
-public class MainAppSwing extends JPanel {
+public class Timetable extends JPanel {
 
     private static final String[] DAYS = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday"};
     private static final Map<String, JComboBox<String>> timetableMap = new HashMap<>();
@@ -26,7 +26,7 @@ public class MainAppSwing extends JPanel {
 
     private static List<String> subjectsList = new ArrayList<>();
 
-    public MainAppSwing() {
+    public Timetable() {
         setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
         setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
@@ -279,7 +279,7 @@ public class MainAppSwing extends JPanel {
             frame.setSize(800, 600);
             frame.setLocationRelativeTo(null);
 
-            MainAppSwing mainPanel = new MainAppSwing();
+            Timetable  mainPanel = new Timetable ();
             frame.add(mainPanel);
             frame.setVisible(true);
         });
